@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+nav {
+  position: static;
+}
+.notes {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.note {
+  background-color: wheat;
+  width: 50%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.note h1 {
+  color: #e0473a;
+  border-bottom: 2px solid #e0473a;
+}

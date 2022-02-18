@@ -8,24 +8,27 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR PART START */
 
-navb {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background-color: black;
+  /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  position: absolute;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+  position: relative;
+  z-index: 2;
 }
 
-navb .logo {
+nav .logo {
   padding-left: 1em;
   font-weight: 700;
   font-size: 1.5em;
@@ -33,18 +36,18 @@ navb .logo {
   color: white;
 }
 
-navb ul li a {
+nav ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.25s;
 }
 
-navb ul li {
+nav ul li {
   display: inline-block;
   margin: 1em 1.5em;
 }
 
-navb ul li a:hover {
+nav ul li a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -55,64 +58,32 @@ navb ul li a:hover {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url(./assets/bg2.jpg); /* BG IMAGE BAGIAN BANNER*/
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.container {
-  background-color: rgba(38, 76, 84, 0.85);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width: 50%;
+.vid-reels {
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-.poto {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 2px solid rgba(247, 230, 213, 0.6);
-  margin: 1em 0;
+.reels {
+  margin-top: 10px;
+}
+.vid-bg {
+  position: relative;
+  z-index: 0;
 }
 
-.hero h1 {
-  font-size: 35px;
-  color: white;
-  font-weight: 700;
-}
-
-.hero h2 {
-  font-size: 25px;
-  color: white;
-  font-weight: 400;
-}
-
-.rels {
-  font-size: 15px;
-  font-weight: 700;
-  color: white;
-  border: 2px solid white;
-  border-radius: 2.5em;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  margin: 1em 0;
-  transition: all 0.2s;
-}
-
-.rels:hover {
-  color: white;
-  background-color: #0a4a4c;
-  border-color: #0a4a4c;
+.title h1 {
+  z-index: 3;
+  position: relative;
 }
 
 /* BANNER PART END */
@@ -121,33 +92,47 @@ navb ul li a:hover {
 
 .about {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+}
+
+.headabout {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.about-cont {
+  width: 50%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(247, 230, 213, 1);
+  transform: translateY(-10%);
 }
 
-.headabout {
-  color: #0a4a4c;
-  border-bottom: 2px solid #0a4a4c;
+.h1header {
+  margin-bottom: 10%;
 }
 
-.about-cont {
-  margin: 5% 0;
-  width: 50%;
+.container-text {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .ava {
   transform: translateX(-10%);
   margin-left: 10%;
-  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 10px 10px 3px rgba(255, 255, 255, 1); */
   width: 250px;
   height: 250px;
+  border: 5px inset white;
 }
 
 .text-cont {
@@ -163,41 +148,17 @@ navb ul li a:hover {
 .text-cont h2 {
   font-size: 20px;
   font-weight: 700;
-  color: rgb(65, 73, 76);
+  color: rgb(255, 255, 255);
 }
 
 .text-cont p {
   font-size: 15px;
-  color: rgb(65, 73, 76);
+  color: rgb(255, 255, 255);
 }
 
 /* ABOUT ME PART END */
 
 /* DEMO REEL PART START */
-
-.demo {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(247, 230, 213, 0.5);
-}
-
-.demo h1 {
-  color: #0a4a4c;
-  border-color: #0a4a4c;
-}
-
-.video {
-  margin: 5% 0;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0.85em 0.85em 3px rgba(0, 0, 0, 0.3);
-}
 
 /* DEMO REEL PART END */
 
@@ -210,8 +171,8 @@ navb ul li a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(247, 230, 213, 1);
-  position: static;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
 }
 
 .projects-show h1 {
@@ -226,6 +187,7 @@ navb ul li a:hover {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  /* z-index: 5; */
 }
 
 .carousel {
@@ -334,10 +296,7 @@ footer ul li a:hover {
 .contact {
   width: 100%;
   height: 15vh;
-  background-image: url(./assets/bg2.jpg); /* BG IMAGE BAGIAN CONTACT*/
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,7 +319,8 @@ footer {
   height: 50px;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(38, 76, 84, 0.85);
+  background-color: rgba(254, 255, 255, 0.85);
+  color: black;
   border-radius: 50%;
   transition: all 0.25s;
 }
