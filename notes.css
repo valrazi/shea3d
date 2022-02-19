@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: 'Quicksand', sans-serif; /* BUAT GANTI FONT */
 }
 nav {
   position: relative;
@@ -29,7 +30,7 @@ nav {
 
 .resume-content {
   width: 50%;
-  max-height: 100vh;
+  height: 100vh;
   margin-top: 50px;
   background-color: black;
 }
@@ -59,7 +60,7 @@ nav {
 }
 
 .resume-para ul li {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .edu-h2 {

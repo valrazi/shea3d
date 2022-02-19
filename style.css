@@ -347,7 +347,7 @@ footer {
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 1080px) {
   .headabout {
     font-size: 25px;
   }
