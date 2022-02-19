@@ -348,9 +348,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1330px) {
+@media screen and (min-width: 1080px) {
   .headabout {
-    font-size: 25px;
+    font-size: 1px;
   }
   .text-cont h1 {
     font-size: 15px;
