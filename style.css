@@ -347,7 +347,7 @@ footer {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1080px) {
+@media screen and (min-width: 480px) and (max-width: 1330px) {
   .headabout {
     font-size: 25px;
   }
@@ -382,7 +382,7 @@ footer {
   }
 
   .reels {
-    width: 390px;
+    width: 200px;
   }
 
   nav .logo {
@@ -424,7 +424,7 @@ footer {
   }
 }
 
-@media all and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   .headabout {
     font-size: 45px;
   }
