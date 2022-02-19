@@ -348,7 +348,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
   .headabout {
     font-size: 1px;
   }
