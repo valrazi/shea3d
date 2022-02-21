@@ -117,7 +117,7 @@ nav ul li a:hover {
 
 .about-cont {
   width: 50%;
-  height: 20vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,6 +521,11 @@ footer {
   .headabout {
     font-size: 45px;
   }
+
+  .about-cont {
+    height: 20vh;
+  }
+
   .text-cont h1 {
     font-size: 45px;
     color: #e0473a;
