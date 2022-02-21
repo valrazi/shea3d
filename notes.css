@@ -67,13 +67,13 @@ nav {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 472px) {
   nav .logo {
-    font-size: 0.65em;
+    font-size: 0.4em;
   }
 
   nav ul li a {
-    font-size: 0.17em;
+    font-size: 0.13em;
   }
 
   .resume-para h1 {
@@ -93,7 +93,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   nav .logo {
     font-size: 0.85em;
   }
