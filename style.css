@@ -63,6 +63,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  background-color: black;
 }
 
 .vid-reels {
@@ -79,6 +80,7 @@ nav ul li a:hover {
 }
 .vid-bg {
   position: static;
+  height: 100vh;
   z-index: 0;
 }
 
@@ -348,17 +350,17 @@ footer {
   }
 }
 
-@media all and (max-width: 1280px) {
+@media screen and (max-width: 567px) {
   .headabout {
-    font-size: 1px;
+    font-size: 25px;
   }
   .text-cont h1 {
-    font-size: 15px;
+    font-size: 20px;
     color: #e0473a;
   }
 
   .text-cont h2 {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
@@ -370,20 +372,20 @@ footer {
   }
 
   .text-cont p {
-    font-size: 5px;
+    font-size: 10px;
     color: rgb(255, 255, 255);
   }
   .ava {
     transform: translateX(-10%);
-    margin-left: 10%;
+    margin-left: 5%;
     /* box-shadow: 10px 10px 3px rgba(255, 255, 255, 1); */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 2px inset white;
   }
 
   .reels {
-    width: 200px;
+    width: 90%;
   }
 
   nav .logo {
@@ -391,10 +393,100 @@ footer {
   }
 
   nav ul li a {
+    font-size: 0.17em;
+  }
+  .carousel {
+    height: 50%;
+  }
+
+  .projects-show {
+    width: 80%;
+  }
+  .carousel-button {
+    font-size: 0.8rem;
+  }
+  .capt {
+    font-size: 9px;
+  }
+  .fa {
+    padding-top: 7px;
+    padding-left: 7.5px;
+    /* padding-right: 3px; */
+    margin: 0;
+    /* font-size: 15px; */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(254, 255, 255, 0.85);
+    color: black;
+    border-radius: 50%;
+    transition: all 0.25s;
+  }
+  .fa .fa-instagram {
+    padding-left: 7.5px;
+  }
+  .projects-show h1 {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .headabout {
+    font-size: 30px;
+  }
+
+  .about-cont {
+    width: 80%;
+  }
+
+  .text-cont h1 {
+    font-size: 25px;
+    color: #e0473a;
+  }
+
+  .text-cont h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+
+  .title-hero {
+    font-size: 25px;
+    color: black;
+    border-bottom: 4px solid black;
+  }
+
+  .text-cont p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+  }
+  .ava {
+    transform: translateX(-10%);
+    margin-left: 5%;
+    /* box-shadow: 10px 10px 3px rgba(255, 255, 255, 1); */
+    width: 200px;
+    height: 200px;
+    border: 2px inset white;
+  }
+
+  .reels {
+    width: 90%;
+  }
+
+  nav .logo {
+    font-size: 0.85em;
+  }
+
+  nav ul li a {
     font-size: 0.5em;
   }
   .carousel {
-    height: 200px;
+    height: 80%;
+  }
+
+  .projects-show {
+    width: 80%;
   }
   .carousel-button {
     font-size: 0.8rem;
