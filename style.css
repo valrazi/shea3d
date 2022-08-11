@@ -326,8 +326,8 @@ footer {
 
   .title-hero {
     font-size: 25px;
-    color: black;
-    border-bottom: 4px solid black;
+    color: white;
+    border-bottom: 5px solid gray;
   }
 
   .text-cont p {
@@ -438,8 +438,8 @@ footer {
 
   .title-hero {
     font-size: 25px;
-    color: black;
-    border-bottom: 4px solid black;
+    color: white;
+    border-bottom: 5px solid gray;
   }
 
   .text-cont p {
@@ -503,7 +503,7 @@ footer {
   .outside h1 {
   color: rgb(255, 255, 255);
   font-size: 45px;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid gray;
 }
 
   .about-cont {
@@ -523,8 +523,8 @@ footer {
 
   .title-hero {
     font-size: 60px;
-    color: black;
-    border-bottom: 4px solid black;
+    color: white;
+    border-bottom: 5px solid gray;
   }
 
   .text-cont p {
@@ -580,7 +580,7 @@ footer {
   .outside h1 {
   color: rgb(255, 255, 255);
   font-size: 45px;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid gray;
 }
 
   .about {
@@ -608,8 +608,8 @@ footer {
 
   .title-hero {
     font-size: 60px;
-    color: black;
-    border-bottom: 4px solid black;
+    color: white;
+    border-bottom: 5px solid gray;
   }
 
   .text-cont p {
