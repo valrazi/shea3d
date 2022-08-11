@@ -187,7 +187,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(2, 2, 2, 0.404);
+  background-color: rgba(2, 2, 2, 0.707);
 }
 
 .outside {
