@@ -497,7 +497,14 @@ footer {
 @media screen and (min-width: 1440px) and (max-width: 1919) {
   .headabout {
     font-size: 45px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid gray;
   }
+  .outside h1 {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  border-bottom: 5px solid white;
+}
 
   .about-cont {
     height: 100vh;
@@ -567,7 +574,14 @@ footer {
 @media screen and (min-width: 1440px) {
   .headabout {
     font-size: 45px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid gray;
   }
+  .outside h1 {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  border-bottom: 5px solid white;
+}
 
   .about {
     height: 80vh;
