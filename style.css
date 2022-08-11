@@ -111,13 +111,13 @@ nav ul li a:hover {
 
 .headabout {
   color: rgb(255, 255, 255);
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid gray;
 }
 
 .title-hero {
   font-size: 40px;
-  color: black;
-  border-bottom: 5px solid black;
+  color: white;
+  border-bottom: 5px solid gray;
 }
 
 .about-cont {
@@ -229,6 +229,7 @@ nav ul li a:hover {
 .poster:hover {
   filter: grayscale(0%);
   cursor: pointer;
+  filter : drop-shadow(8px 8px 10px gray)
 }
 
 
